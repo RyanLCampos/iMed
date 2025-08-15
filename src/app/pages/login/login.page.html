@@ -1,0 +1,46 @@
+<ion-content>
+  <!--Tela De Fundo-->
+  <div class="bg-login">
+    <!--Overlaypreto-->
+   <div class="overlay">
+     <!--Login-->
+      <div>
+        <!--IMED-->
+        <div>
+          <h5 class="imed-logo lobster">iMed</h5>
+          <!--TITULO-->
+          <div>
+            <h5 class="titulo-imed"></h5>
+          </div>
+          <!--AVISO-->
+          <div>
+            <h4 class="aviso lobster">Faça seu login para ter acesso as funções do aplicativo</h4>
+          </div>
+        </div>
+        <!--CADASTRO-->
+        <div class="padding-40">
+          <ion-item color="transparent">
+            <ion-label class="email-imed" stacked>E-mail:</ion-label>
+            <ion-input type="email" class="texto-branco" required [(ngModel)]="email"> </ion-input>
+          </ion-item>
+
+          <ion-item color="transparent">
+            <ion-label class="senha-imed" stacked>Senha:</ion-label>
+            <ion-input type="password" class="texto-branco" [(ngModel)]="senha"> </ion-input>
+          </ion-item>
+
+           <!--ENTRAR-->
+          <div class="entrar-posicao">
+               <ion-button class="botaoEntrar" color="danger" shape="large" fill="outline" expand="block" (click)="logar()">
+                <h5>Login</h5>
+              </ion-button>
+          </div>
+
+          <!--REGISTRAR-->
+          <div class="registrar-imed lobster" (click)="abrirPagina('register')">
+           Deseja criar uma conta nova?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,55 @@
+<ion-content class="telapequena">
+  <div class="ion-text-end">
+    <ion-button (click)="fechar()" fill="clear">
+      <ion-icon name="close" slot="start" class="fechar-x"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="ion-padding">
+    <ion-list >
+      <ion-item *ngFor="let p of carrinho" class="ion-text-wrap">
+        <ion-grid color="danger">
+          <ion-row>
+            <ion-col class="nome-espaco">
+              <b class="frobo">{{ p.nome }} ({{ p.quantidade }})</b>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col class="col-espaco">
+                <ion-button fill="clear" (click)="aumentarCarrinhoItem(p)">
+                  <ion-icon  name="add-circle"class="add-icon" ></ion-icon>
+                </ion-button>
+                <ion-button fill="clear" (click)="diminuirCarrinhoItem(p)">
+                  <ion-icon  name="remove-circle" class="remove-icon" ></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          <ion-row>
+            <ion-col size="9" class="alignEnd">
+              <p>{{ p.quantidade * p.preco | currency: 'USD' }}</p>
+            </ion-col> 
+            <ion-col size="1">
+                <ion-icon name="close-circle" class="excluir-icon" (click)="removerCarrinhoItem(p)"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="9">
+              <h4 class="frobo"> Total: </h4>
+            </ion-col>
+            <ion-col size="9" class="alignEnd">
+              {{ getTotal() | currency: 'USD' }}  
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+
+    <ion-button class="checkout-button" expand="block" (click)="comprar()">
+     <h4 class="checkout frobo">Comprar</h4>
+    </ion-button>
+  </div>
+</ion-content>

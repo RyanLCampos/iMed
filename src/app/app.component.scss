@@ -1,0 +1,48 @@
+.toolbar-menu{
+    --background: #FF0054;
+    padding-bottom: 0px;
+}
+
+.escrita-conta{
+    color: white;
+
+}
+
+.escrita{
+    padding-left: 0px;
+    font-size: 18px;
+    font-weight: 250;
+    font-family: 'Roboto Slab', serif;
+    align-self: center;
+    text-align: center;
+}
+.icons{
+    font-size: 30px;
+    color: #323031;
+    margin-inline-end: 15px;
+}
+.ion-list{
+    background-color: white;
+}
+.ion-content{
+    --background: white;
+}
+
+.mouse:hover{
+    --background: #FF0054;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    --color-hover:white;
+    .icons{
+     color: white;
+     font-size: 35px;
+    }
+    .escrita{
+        color: white;
+        font-size: 20px;
+    }
+}
+.item{
+    --border-color:transparent;
+    margin-right: 0px;
+}

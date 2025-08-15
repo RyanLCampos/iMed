@@ -1,0 +1,63 @@
+<ion-content>
+<!--Registro-->
+<div class="bg-register">
+  <!--Overlaypreto-->
+ <div class="overlay">
+   <!--Conteudo do Registro-->
+    <div>
+      <!--IMED-->
+      <div>
+        <h5 class="imed-logo lobster">iMed</h5>
+        <!--TITULO-->
+        <div>
+          <h5 class="titulo-imed"></h5>
+        </div>
+        <!--TEXTO-->
+        <div>
+          <h4 class="texto lobster">Vamos iniciar o cadastro</h4>
+        </div>
+      </div>
+      <!--CADASTRO-->
+      <form method="post" action="cadastrar.php">
+      <div class="padding-40">
+   
+        <ion-item color="transparent">
+          <ion-label class="name-imed" stacked>Nome:</ion-label>
+          <ion-input type="text" name="nome" placeholder="Nome Completo" class="texto-branco" [(ngModel)]="nome"></ion-input>
+        </ion-item>
+
+        <ion-item color="transparent">
+          <ion-label class="email-imed-registro" stacked>E-mail:</ion-label>
+          <ion-input type="email" name="email" placeholder="exemplo@hotmail.com" class="texto-branco" [(ngModel)]="email"> </ion-input>
+        </ion-item>
+
+        <ion-item color="transparent">
+          <ion-label class="senha-imed-registro" stacked>Senha:</ion-label>
+          <ion-input type="password" name="senha_1" placeholder="Senha" class="texto-branco" [(ngModel)]="senha"> </ion-input>
+        </ion-item>
+
+        <ion-item color="transparent">
+          <ion-label class="confirmsenha-imed-registro" stacked>Confirmar Senha:</ion-label>
+          <ion-input type="password" name="senha_2" placeholder="Senha" class="texto-branco" [(ngModel)]="senha_2"> </ion-input>
+        </ion-item>
+        
+
+         <!--ENTRAR-->
+         <div class="entrar-posicao">
+          <ion-button class="botaoEntrar" name="botao_cadastrar" color="danger" shape="large" fill="outline" expand="block" (click)="tentarCadastrar()" [disabled]="desabilitarbotao" >
+           <h5>Cadastrar</h5>
+         </ion-button>
+         </div>
+
+        <!--TENHO CONTA-->
+        <div class="registrar-imed lobster" (click)="abrirPagina('login')">
+         Já tenho uma conta!
+        
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</ion-content>

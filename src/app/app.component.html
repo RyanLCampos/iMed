@@ -1,0 +1,58 @@
+<ion-app>
+  <ion-menu  menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar class="toolbar-menu">
+        <ion-title class="escrita-conta lobster">Conta</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content  class="ion-content">
+      <ion-list lines="none" class="ion-list">
+        <ion-menu-toggle >
+
+          <ion-item class="mouse">
+            <ion-label><strong class="escrita">Perfil</strong> </ion-label>
+            <ion-icon class="icons"  name="person" slot="start"></ion-icon>
+          </ion-item> 
+        
+          <ion-item class="mouse" routerLink="/telainicial">
+            <ion-label>
+              <strong class="escrita">Mapa</strong> 
+            </ion-label>   
+            <ion-icon class="icons"  name="map" slot="start"></ion-icon>  
+          </ion-item>
+
+          <ion-item class="mouse">
+            <ion-label>
+             <strong class="escrita">Favoritos</strong>
+            </ion-label>
+            <ion-icon class="icons" name="heart" slot="start" ></ion-icon>
+          </ion-item>
+
+
+          <ion-item routerLink="/carrinho" class="mouse">
+            <ion-label>
+             <strong class="escrita">Compras</strong>
+            </ion-label>
+            <ion-icon class="icons" name="cart" slot="start"></ion-icon>
+          </ion-item>
+
+          <ion-item class="item mouse">
+            <label class="ion-align-items-center">
+              <strong class="escrita">Configurações</strong> 
+            </label>
+            <ion-icon class="icons" name="cog" slot="start"></ion-icon>
+          </ion-item >
+
+          <ion-item class="mouse" routerLink="/login">
+            <label >
+              <strong class="escrita">Sair</strong>
+            </label>
+            <ion-icon class="icons" name="exit" slot="start"></ion-icon>
+          </ion-item>
+
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

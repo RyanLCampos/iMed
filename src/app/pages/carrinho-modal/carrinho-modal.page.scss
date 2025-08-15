@@ -1,0 +1,54 @@
+.telapequena{
+    --background: white;
+}
+
+.fechar-x{
+    color:  white;
+    font-size: 25px;
+    font-weight: 700;
+}
+.add-icon{
+    color: #06D6A0;
+    font-size: 20px;
+}
+.excluir-icon{
+    color: #8D99AE;
+    font-size: 20px;
+    margin-top: 14.3px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.botao-excluir{
+    margin-top: 5.3px; 
+    padding-right: 10px;
+}
+.checkout{
+  color: white;
+  font-size: 20px; 
+  align-self: center;
+  font-weight: 500;
+}
+.checkout-button{
+    --background: #EF476F;
+    margin-left: 18px;
+}
+.remove-icon{
+    color: #EF476F;
+    font-size: 20px;
+}
+
+.escrita-quantidade{
+    padding-inline-start: 15px;
+    padding-top: 13px;
+    max-width: calc(calc(3 / var(--ion-grid-columns, 12)) * 100%);
+}
+
+.col-espaco{
+    padding-left: 0px; 
+    padding-right: 66px; 
+}
+
+.nome-espaco{
+    padding-right: 0px;
+    padding-left: 0px;
+}

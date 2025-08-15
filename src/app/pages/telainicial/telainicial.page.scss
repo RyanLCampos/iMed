@@ -1,0 +1,28 @@
+#map{
+    height: 100%;
+    width: 100%;
+
+}
+.toolbar-mapa{
+    --background:#FF0054;
+}
+.titulo-mapa{
+ text-align: center;
+ color: white;
+ font-size: 50px;
+}
+.barra-pesquisa{
+    background-color: #ec0150;
+    font-family: 'Roboto Slab', serif;
+    --background: white;
+}
+.textopesquisar{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+.botaoMenu{
+    color: white;
+    size: 50px;
+}
